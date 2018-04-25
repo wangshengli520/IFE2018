@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2018-04-25 13:54:25
+ * @version $Id$
+ */
+/*简历头部*/
+.header_box{
+	padding-top: 30px;
+	width: 800px;
+	margin: 0 auto;
+}
+.header_box h2{
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 15px;
+}
+/*简历内容*/
+.main_box{
+	width: 800px;
+	margin: 25px auto 0;
+}
+.resume_tit h3{
+	font-size:24px;
+	border-bottom: 2px solid #7ca6cf;
+	color:#7ca6cf;
+	padding-bottom: 10px;
+}
+.jiben_left{
+	float: left;
+	width: 33%;
+}
+.jiben_right{
+	float: right;
+	width: 33%;
+	text-align: center;
+}
+.jiben_right img{
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.jiben_right img:hover{
+	transform: translateY(-10px);
+}
+.jiben_box {
+    padding: 18px 15px 15px 15px;
+}
+.jiben_left ul li{
+	line-height: 30px;
+}
+.qiuzhi_ul{
+	padding: 18px 15px 15px 15px;
+}
+.jingyan_box{
+	padding: 18px 15px 15px 15px;
+}
+.pingjia_box{
+	padding: 18px 15px 15px 15px;
+}

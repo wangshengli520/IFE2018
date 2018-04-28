@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.box h2{		
+		width: 100px;
+		position: relative;
+	}
+	.box h2:before{
+		content: "";
+		height: 2px;
+		background: #f00;
+		position: absolute;
+		transform:scaleX(0);
+		width: 100px;
+		bottom: 0;
+		transition: all 0.5s;
+	}
+	.box:hover h2:before{
+		transform:scaleX(1);
+	}
+</style>
+</head>
+<body>
+    <div class="box">
+    	<h2>前端学院</h2>
+    	<h3>鼠标移入</h3>
+    </div>
+</body>
+</html>

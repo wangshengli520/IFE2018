@@ -104,10 +104,10 @@
                 margin-top: 48px;
                 border-top: 2px solid #46240b;
                 background: #f6f7f2;
-                transition: all 0.5s;
+                transition: all 1s;
             }
             .face:hover .eye-bottom{
-            	transform: translateY(-20px);
+            	transform: translateY(-15px);
             }
             .eye-wrap .right {
                 left: auto;
@@ -124,6 +124,16 @@
                 border-radius: 50% 50% 50% 50%;
                 background: #e85a5e;
                 opacity: 0.0;
+                transition: all 0.5s;
+            }
+            .face:hover .face-red{
+            	opacity: 0.9;
+            }
+            .face:hover .mouth{
+            	border-radius: 0% 40% 50% 50%;
+            }
+            .face:hover .mouth-wrap .right {
+                border-radius: 40% 0% 50% 50%;
             }
             /* 鼻子 */
             .nose {
@@ -146,7 +156,7 @@
                 height: 20px;
                 overflow: hidden;
             }
-            .mouth {
+            .mouth{
                 width: 40px;
                 height: 40px;
                 border-bottom: 4px solid #000;
@@ -155,6 +165,7 @@
                 margin-top: -26px;
                 position: absolute;
                 left: 0;
+                transition: all 1s;
             }
             .mouth-wrap .right {
                 border-bottom: 4px solid #000;
@@ -164,6 +175,9 @@
                 position: absolute;
                 left: auto;
                 right: 0;
+            }
+            .mouth-wrap .left{
+            	transition: all 0.5s;
             }
             /*鼠标hover样式 写在这里*/
         </style>

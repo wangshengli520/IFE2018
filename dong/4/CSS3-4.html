@@ -15,35 +15,46 @@
 	img{
 		display: block;
 	}
+	/*.box:hover .xx{
+		transform: rotateY(180deg);
+	}*/
+	.box{
+		transform-style: preserve-3d;
+         perspective: 500px;
+	}
 	.box div{
 		position:absolute;
 	}
 	.box .box1{
 		transition: all 1s;
-		z-index:6;
+		z-index:6;	
+		transform: rotateY(0deg);
 	}
 	.box:hover .box1{
-		transform: rotateY(-180deg);
+		transform: rotateY(180deg);
 		z-index: 1;	
 	}
 	.box .box2{
 		transition: all 1s;
 		z-index: 1;
+		transform: rotateY(-180deg);
 	}
 	.box:hover .box2{
-		transform: rotateY(-180deg);
+		transform: rotateY(0deg);
 		z-index: 6;	
 	}
 </style>
 </head>
 <body>
     <div class="box">
-    	<div class="box1">
-    		<img src="img/正面.jpg">
-    	</div>
-    	<div class="box2">
-    		<img src="img/反面.jpg">
-    	</div>
+    	<div class="xx">
+    		<div class="box1">
+    			<img src="img/正面.jpg">
+    		</div>
+    		<div class="box2">
+    			<img src="img/反面.jpg">
+    		</div>
+    	</div>  	
     </div>
 
 </body>
